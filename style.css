@@ -41,20 +41,20 @@ header{
     font-size: 1rem;
 }
 
-.header-link{
+.navbar{
     display: flex;
     font-size: 1rem;
     gap: 5rem;
 }
 
-.header-link a{
+.navbar a{
     color: var(--cor-principal);
     font-weight: 700;
     transition: 0.3s;
     text-decoration: none;
 }
 
-.header-link a:hover{
+.navbar a:hover{
     color: #dba776;
 }
 
