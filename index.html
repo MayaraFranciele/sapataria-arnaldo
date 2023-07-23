@@ -1,130 +1,175 @@
 <!DOCTYPE html>
-
 <html lang="pt-br">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE-edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Mayara Franciele">
-
-
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <title>Sapataria do seu Arnaldo</title>
 </head>
 
 <body>
-    <div class="background">
-        <header>
-            <div class="logo">
-                <img src="./img/logo-a.png" alt="Logo da Página" width="200" height="50">
-            </div> <!-- logo -->
+    <nav>
+        <ul class="navbar container">
+            <li class="items-menu">
+                <a href="index.html" class="link-menu" data-test="index">Início</a>
+            </li>
+            <li class="items-menu">
+                <a href="sobre-nos.html" class="link-menu" data-test="sobre-nos">Nosso time</a>
+            </li>
+            <li class="items-menu">
+                <a href="catalogo.html" class="link-menu" data-test="catalogo">Nossos produtos</a>
+            </li>
+            <li class="items-menu">
+                <a href="contato.html" class="link-menu" data-test="contato">Quem somos</a>
+            </li>
+        </ul>
+    </nav>
 
-            <nav class="navbar">
-                <li> <!-- List Items (LI) -->
-                    <a href="index.html" data-test="index">Início</a> <!-- Anchor (A) -->
-                </li>
-                <li>
-                    <a href="sobre-nos.html" data-test="sobre-nos">Sobre nós</a>
-                </li>
-                <li>
-                    <a href="catalogo.html" data-test="catalogo">Catálogo</a>
-                </li>
-                <li>
-                    <a href="contato.html" data-test="contato">Contato</a>
-                </li>
-            </nav>
-        </header>
-
-        <div class="banner">
-            <div class="banner-text">
-                <h1>SAPATOS DE COURO</h1>
-                <h1>E MUITO MAIS!</h1>
-                <button>Nova Coleção</button>
+    <div class="container">
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
             </div>
-        </div> <!-- background -->
-        
-        <div class="title-products">
-            <h2>LANÇAMENTO</h2>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/Slide1.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/Slide2.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/Slide3.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/Slide4.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
+    </div>
 
-        <div class="products">
-            <div class="pics-index">
-                <img src="./img/oregon-shoe.avif" alt="Sapato masculino de couro preto">
-                <p>Lorem ipsum dolor</p>
-                <h5> R$ 299,99 </h5>
-            </div> <!-- div produtos -->
+    <div class="title-products">
+        <h2>LANÇAMENTO</h2>
+    </div>
 
-            <div class="pics-index">
-                <img src="./img/brown-shoe.avif" alt="Sapato masculino de couro marrom">
-                <p> Lorem ipsum dolor</p>
-                <h5> R$ 299,99 </h5>
-            </div> <!-- div produtos -->
+    <div class="products">
+        <div class="pics-index">
+            <img src="./img/oregon-shoe.avif" alt="Sapato masculino de couro preto">
+            <p>Sapato Masculino</p>
+            <h5> R$ 299,99 </h5>
+        </div> <!-- div produtos -->
 
-            <div class="pics-index">
-                <img src="./img/white-shoe.avif" alt="Sapato de couro masculino branco"> 
-                <p> Lorem ipsum dolor</p>
-                <h5> R$ 299,99 </h5>
-            </div> <!-- div produtos -->
+        <div class="pics-index">
+            <img src="./img/brown-shoe.avif" alt="Sapato masculino de couro marrom">
+            <p>Sapato Masculino</p>
+            <h5> R$ 299,99 </h5>
+        </div> <!-- div produtos -->
 
-            <div class="pics-index">
-                <img src="./img/brown-boot.avif" alt="Bota feminina de couro marrom">
-                <p> Lorem ipsum dolor</p>
-                <h5> R$ 499,99 </h5>
-            </div> <!-- div produtos -->
+        <div class="pics-index">
+            <img src="./img/white-shoe.avif" alt="Sapato de couro masculino branco">
+            <p>Sapato Masculino</p>
+            <h5> R$ 299,99 </h5>
+        </div> <!-- div produtos -->
 
-            <div class="pics-index">
-                <img src="./img/black-boot.avif" alt="Bota feminina de couro preta"> <!--sapatos até aqui-->
-                <p> Lorem ipsum dolor</p>
-                <h5> R$ 499,99 </h5>
-            </div> <!-- div produtos -->
+        <div class="pics-index">
+            <img src="./img/brown-boot.avif" alt="Bota feminina de couro marrom">
+            <p>Bota Feminina</p>
+            <h5> R$ 499,99 </h5>
+        </div> <!-- div produtos -->
 
-            <div class="pics-index">
-                <img src="./img/pink-bag.webp" alt="Bolsa feminina de couro rosa"> <!--bolsas daqui em diante-->
-                <p> Lorem ipsum dolor</p>
-                <h5> R$ 699,99 </h5>
-            </div> <!-- div fotos -->
-           
-            <div class="pics-index">
-                <img src="./img/black-bag.webp" alt="Bolsa feminina de couro preto">
-                <p> Lorem ipsum dolor</p>
-                <h5> R$ 699,99 </h5>
-            </div> <!-- div fotos -->
-           
-            <div class="pics-index">
-                <img src="./img/blue-bag.webp" alt="Bolsa feminina de couro azul">
-                <p> Lorem ipsum dolor</p>
-                <h5> R$ 699,99 </h5>
-            </div> <!-- div fotos -->
-          
-            <div class="pics-index">
-                <img src="./img/brown-belt.jpg" alt="Cinto masculino de couro marrom"> <!--cintos daqui em diante-->
-                <p> Lorem ipsum dolor</p>
-                <h5> R$ 199,99 </h5>
-            </div> <!-- div fotos -->
-          
-            <div class="pics-index">
-                <img src="./img/black-belt.webp" alt="Cinto masculino de couro preto">
-                <p> Lorem ipsum dolor</p>
-                <h5> R$ 199,99 </h5>
-            </div> <!-- div fotos -->
-        </div> <!-- div dos produtos -->
+        <div class="pics-index">
+            <img src="./img/black-boot.avif" alt="Bota feminina de couro preta"> <!--sapatos até aqui-->
+            <p>Bota Feminina</p>
+            <h5> R$ 499,99 </h5>
+        </div> <!-- div produtos -->
 
-        <footer class="footer">
-            <address>
+        <div class="pics-index">
+            <img src="./img/pink-bag.webp" alt="Bolsa feminina de couro rosa"> <!--bolsas daqui em diante-->
+            <p>Bolsa Feminina</p>
+            <h5> R$ 699,99 </h5>
+        </div> <!-- div fotos -->
+
+        <div class="pics-index">
+            <img src="./img/black-bag.webp" alt="Bolsa feminina de couro preto">
+            <p>Bolsa Feminina</p>
+            <h5> R$ 699,99 </h5>
+        </div> <!-- div fotos -->
+
+        <div class="pics-index">
+            <img src="./img/blue-bag.webp" alt="Bolsa feminina de couro azul">
+            <p>Bolsa Feminina</p>
+            <h5> R$ 699,99 </h5>
+        </div> <!-- div fotos -->
+
+        <div class="pics-index">
+            <img src="./img/brown-belt.jpg" alt="Cinto masculino de couro marrom"> <!--cintos daqui em diante-->
+            <p>Cinto Masculino</p>
+            <h5> R$ 199,99 </h5>
+        </div> <!-- div fotos -->
+
+        <div class="pics-index">
+            <img src="./img/black-belt.webp" alt="Cinto masculino de couro preto">
+            <p>Cinto Masculino</p>
+            <h5> R$ 199,99 </h5>
+        </div> <!-- div fotos -->
+    </div> <!-- div dos produtos -->
+
+    <footer>
+        <div class="footer">
+            <div>
                 <h3> Endereço </h3>
                 <p> Rua Forte do Leme, 52 </p>
                 <p> Jd. Santa Adélia </p>
                 <p> São Paulo - SP </p>
+            </div>
+            <div>
                 <h3> Contato </h3>
-                <p> Telefone: (11) 3371-1279 </p>
-            </address>
-            <p> Copyright © 2023 TermsFeed®. All rights reserved. </p>
-        </footer>
+                <p>Telefone: (11) 3371-1279 </p>
+            </div>
+            <div>
+                <h3>Redes Sociais</h3>
+                <div class="redes-sociais">
+                    <a href="https://web.whatsapp.com/" target="_blank">
+                        <img src="./img/wpp-icon.png" alt="icone do whatsApp" height="50">
+                    </a>
+                    <a href="https://br.linkedin.com/" target="_blank">
+                        <img src="./img/linkedin-icon.png" alt="icone do linkedin" height="50">
+                    </a>
+                    <a href="https://twitter.com/" target="_blank">
+                        <img src="./img/tt-icon.png" alt="icone do twitter" height="50">
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+        <p class="copy"> Copyright © 2023 TermsFeed®. All rights reserved. </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
 </body>
 </html>
