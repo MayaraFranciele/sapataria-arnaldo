@@ -14,9 +14,11 @@ body{
 
 .navbar{
     display: flex;
-    font-size: 1rem;
+    font-size: 18px;
     gap: 5rem;
     flex-wrap: wrap;
+    background-color: #000;
+
 }
 
 nav{
@@ -44,7 +46,7 @@ nav{
 
 .link-menu{
     display: block;
-    padding: 10px;
+    padding: 20px 0 30px 0;
 }
 
 .title-products h2{
@@ -127,131 +129,74 @@ section h2{
     justify-content: center;
     cursor: pointer;
 }
-
-.copy{
-    font-size: 15px;
-    font-weight: 600;
-    color: #fff;
-    text-align: center;
-    background-color: #000;
-    font-family: 'Quicksand', sans-serif;
-    margin: 0%;
-}
-
 /* página sobre nós */
-.title-about-us{
-    margin: 5px 5px 5px 30px;
-    font-size: 35px;
-    padding: 30px 30px;
-    font-family: 'Quicksand', sans-serif;
-}
-
-.subtitle-about-us{
-    margin: 5px 5px 5px 5px;
-    font-size: 20px;
-    padding: 30px 30px;
-    font-family: 'Quicksand', sans-serif;
-}
-
-.title-arnaldo{
-    margin: 10px 10px 10px 30px;
-    font-size: 35px;
-    padding: 30px 30px;
+#title-time{
+    font-size: 40px;
     text-align: center;
-    font-family: 'Quicksand', sans-serif;
+    margin-top: 30px;
+    font-family: 'Mukta', sans-serif;
+    font-weight: 700;
+    color: #72420b;
 }
 
-.subtitle-arnaldo{
-    margin: 10px 10px 10px 10px;
-    font-size: 20px;
-    padding: 30px 30px;
-    font-family: 'Quicksand', sans-serif;
-}
-
-/* .profile-arnaldo{
+.time img{
     border-radius: 50%;
-    margin-top: 50px;
-} */
-
-.store-photo{
-    border-radius: 4%;
-}
-/* Com o main eu posso mudar o fundo da página sobre nós sem alterar o texto e imagem */
-main{
-    padding: 50px 0px;
-    display: flex;
-    justify-content: space-around;
+    margin: 40px 0  0 110px;
 }
 
-section,
-aside{
-    width: 45%;
+.time h3{
+    margin: 20px 0 0 220px;
+    font-family: 'Mukta', sans-serif;
+    font-size: 20px;
 }
 
-section header{
-    padding: 5px;
-    text-align: center;
+.time h6{
+    color: #b1aba4;
+    font-family: 'Mukta', sans-serif;
+    margin: 20px 0 0 220px;
 }
 
-section div{
-    padding: 5px;
-    text-align: center;
-}
-
-aside header{
-    padding: 5px;
-    text-align: center;
-}
-
-aside div{
-    padding: 5px;
-    text-align: center;
+.time div{
+    display: inline-block;
 }
 /* página de contato */
-.contact-form{
-    font-family: 'Quicksand', sans-serif;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    height: 100%;
-    padding: 5px 100px;
-    margin-top: 80px;
+main h1{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'Mukta', sans-serif;
+    font-weight: 700;
+    color: #72420b;
 }
 
- .right{
-     margin-top: 150px;
-     margin-right: 50px;
-} 
-
-.left{
-    margin-bottom: 150px;
+main p{
+    text-align: center;
+    margin-top: 10px;
+    font-style: italic;
+    color: #b1aba4;
 }
 
-.left h2{
-    margin-bottom: 1rem;
+main img{
+    border-radius: 50%;
+    margin: 30px 0 0 70px;
 }
 
-.hour p{
+main div{
+    display: inline-block;
+    width: 40%;
+    margin: 10px 5px 20px 40px;
+}
+
+div h2{
+    color: #72420b;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+div h6{
+    font-weight: 500;
     font-size: 20px;
-    font-family: 'Quicksand', sans-serif;
-    margin-top: 5px;  
-}
-
-.hour h2{
-  margin-top: 8px;  
-  position:relative;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
-  font-size: 25px;
-  font-family: 'Quicksand', sans-serif;
-}
-
-
-
-.social-media img{
-    cursor: pointer;
 }
 
 .newsletter{
@@ -409,4 +354,4 @@ ins{
     font-family: 'Quicksand', sans-serif;
 }
 
-/* responsividade */ 
+
